@@ -5,7 +5,7 @@
   text-align: center;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  box-shadow: 0.1rem 0.1rem 1rem lighten(color(black), 40%);
+  box-shadow: 0.1rem 0.1rem 0.7rem lighten(color(black), 40%);
   outline: 0;
   border: 0;
 }
@@ -19,5 +19,6 @@
   &:focus {
     background-color: darken(color(bringYellow), 5%);
     transform: translateY(-5px);
+    box-shadow: 0.1rem 0.1rem 1rem lighten(color(black), 40%);
   }
 }

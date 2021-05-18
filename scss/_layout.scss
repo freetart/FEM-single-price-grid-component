@@ -1,7 +1,7 @@
+// price card
 .price {
   @include maxWidthSm;
   height: 100%;
-  padding-top: 5rem;
 
   &__title {
     @include sectionSpacing;
@@ -102,5 +102,32 @@
         }
       }
     }
+  }
+}
+
+// footer
+.footer {
+  @include flexCenter;
+  text-align: center;
+  flex-wrap: wrap;
+
+  h3 {
+    @include textStyles;
+    font-size: size(xs);
+  }
+
+  a {
+    @include headingStyles;
+    color: color(cyan);
+    outline: 0;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    width: 5rem;
   }
 }
