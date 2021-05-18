@@ -13,10 +13,17 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @include responsive(sm) {
+    font-size: 55.5%;
+  }
 }
 
 body {
+  @include flexCenter;
   font-family: "Karla", sans-serif;
+  background-color: color(lightGray);
+  height: 100vh;
 }
 
 a {

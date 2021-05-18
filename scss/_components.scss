@@ -1,1 +1,23 @@
-// components
+// buttons
+.btn {
+  display: block;
+  font-size: size(md);
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 1rem lighten(color(black), 40%);
+  outline: 0;
+  border: 0;
+}
+
+.btn--primary {
+  background-color: color(bringYellow);
+  color: color(white);
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus {
+    background-color: darken(color(bringYellow), 5%);
+    transform: translateY(-5px);
+  }
+}

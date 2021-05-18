@@ -1,1 +1,106 @@
-// layout
+.price {
+  @include maxWidthSm;
+  height: 100%;
+  padding-top: 5rem;
+
+  &__title {
+    @include sectionSpacing;
+    background-color: color(white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    @include responsive(md) {
+      height: auto;
+    }
+
+    &__heading {
+      @include headingStyles;
+      font-size: size(xxl) + 2rem;
+      color: color(cyan);
+    }
+
+    &__lead {
+      @include textStyles;
+      font-size: size(xl);
+      color: color(bringYellow);
+    }
+
+    &__desc {
+      @include textStyles;
+      font-size: size(md);
+      color: color(grayishBlue);
+    }
+  }
+
+  &__details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include responsive(md) {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+
+    .subs {
+      @include sectionSpacing;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: color(cyan);
+      color: color(white);
+
+      &__heading {
+        @include headingStyles;
+        font-size: size(xl);
+      }
+
+      &__price__container {
+        display: flex;
+        align-items: center;
+
+        .subs__price {
+          @include textStyles;
+          font-size: size(xxl) + 2rem;
+          padding-right: 1rem;
+        }
+
+        .subs__monthly {
+          @include textStyles;
+          font-size: size(xs);
+          color: color(lightGray);
+        }
+      }
+
+      &__desc {
+        @include textStyles;
+        font-size: size(sm);
+        padding-bottom: 0.5rem;
+      }
+    }
+
+    .features {
+      @include sectionSpacing;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      background-color: lighten(color(cyan), 5%);
+      color: color(white);
+
+      &__heading {
+        @include headingStyles;
+        font-size: size(xl);
+      }
+
+      &__list {
+        &__item {
+          @include textStyles;
+          font-size: size(xs);
+          padding: 0.3rem 0;
+          color: color(lightGray);
+        }
+      }
+    }
+  }
+}
