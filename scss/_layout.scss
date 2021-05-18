@@ -127,6 +127,7 @@
       @include textStyles;
       font-size: size(xl);
       color: color(bringYellow);
+      padding-bottom: 1rem;
     }
 
     &__desc {
@@ -178,7 +179,7 @@
       &__desc {
         @include textStyles;
         font-size: size(sm);
-        padding-bottom: 0.5rem;
+        padding-bottom: 1.5rem;
       }
     }
 
